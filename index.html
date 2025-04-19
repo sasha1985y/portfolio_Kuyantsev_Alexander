@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="./img/logo.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
@@ -12,56 +12,14 @@
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио Куянцев Александр</title>
-    <script>
-        const themes = {
-            light: {
-                '--background-img-sun':'"🌦"',
-                '--background-color': ' #ffffff',
-                '--div-background-color': ' #e4e4e4',
-                '--text-color': ' #4b4b4b',
-                '--text-shadow': '5px 5px 15px #444444',
-                '--primary-color': ' #2e4153',
-                '--secondary-color': ' #e4e4e4',
-                '--filled-color': 'unset',
-                '--stroke': '.6px #272727',
-                '--custom-box-shadow_1': '3px 3px 3px 3px #2e4153, -3px -3px 3px 3px #2e4153',
-                '--custom-box-shadow_2': '3px 3px 3px 3px #e4e4e4, -3px -3px 3px 3px #e4e4e4',
-            },
-            dark: {
-                '--background-img-sun':'"🌤"',
-                '--background-color': ' #222f3d',
-                '--div-background-color': ' #2e4153',
-                '--text-color': ' #ecf0f1',
-                '--text-shadow': '10px 10px 30px #2101ec, -10px 10px 30px #d83cec',
-                '--primary-color': ' #3ca3e7',
-                '--secondary-color': ' #2e4153',
-                '--filled-color': 'transparent',
-                '--stroke': '.5px #dd3bd0',
-                '--custom-box-shadow_1': '3px 3px 3px 3px #3ca3e7, -3px -3px 3px 3px #3ca3e7',
-                '--custom-box-shadow_2': '3px 3px 3px 3px #2e4153, -3px -3px 3px 3px #2e4153',
-            }
-        };
-
-        let currentTheme = 'light';
-        const themeBtn = document.getElementById("themeBtn");
-
-        const switchTheme = () => {
-            currentTheme = currentTheme === 'light' ? 'dark' : 'light';
-            const theme = themes[currentTheme];
-
-            for (const [variable, value] of Object.entries(theme)) {
-                document.documentElement.style.setProperty(variable, value);
-            }
-        };
-    </script>
 </head>
 
 <body>
     <main class="portfolio">
         <div class="sticky_header">
-            <img src="logo.svg" alt="logo" class="applogo">
+            <img src="./img/logo.svg" alt="logo" class="applogo">
             <h1>Портфолио Александра Куянцева</h1>
-            <img src="ava.jpg" alt="ava" class="ava">
+            <img src="./img/ava.jpg" alt="ava" class="ava">
             <button type="button" onclick="switchTheme()"></button>
         </div>
         <div class="method">
@@ -101,6 +59,10 @@
             </p>
         </div>
     </main>
+    <footer>
+        <a href="diploms.html">Дипломы</a>
+    </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>

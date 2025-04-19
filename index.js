@@ -1,5 +1,6 @@
 const themes = {
     light: {
+        '--background-img-sun':'"🌦"',
         '--background-color': ' #ffffff',
         '--div-background-color': ' #e4e4e4',
         '--text-color': ' #4b4b4b',
@@ -12,6 +13,7 @@ const themes = {
         '--custom-box-shadow_2': '3px 3px 3px 3px #e4e4e4, -3px -3px 3px 3px #e4e4e4',
     },
     dark: {
+        '--background-img-sun':'"🌤"',
         '--background-color': ' #222f3d',
         '--div-background-color': ' #2e4153',
         '--text-color': ' #ecf0f1',
@@ -26,6 +28,7 @@ const themes = {
 };
 
 let currentTheme = 'light';
+const themeBtn = document.getElementById("themeBtn");
 
 const switchTheme = () => {
     currentTheme = currentTheme === 'light' ? 'dark' : 'light';

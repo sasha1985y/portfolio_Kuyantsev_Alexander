@@ -27,6 +27,11 @@ body {
 }
 
 .portfolio {
+    min-height: 100vh;
+}
+
+.portfolio,
+footer {
     --main-first-letter: #f0b616;
     --main-first-line: #c29825;
     background-color: var(--background-color);
@@ -37,7 +42,6 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    min-height: 100vh;
 }
 
 p::first-letter {
@@ -185,4 +189,16 @@ a,
     p {
         font-size: 0.9em;
     }
+}
+
+/*DIPLOMS*/
+
+.mtusy {
+    transform: rotate(-90deg);
+}
+
+.python-pro {
+    width: 50vw;
+    height: auto;
+    transform: rotate(-90deg);
 }
