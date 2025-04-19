@@ -1,0 +1,188 @@
+:root {
+    --background-img-sun: "🌦";
+    --background-color: #ffffff;
+    --div-background-color: #e4e4e4;
+    --text-color: #4b4b4b;
+    --text-shadow: 5px 5px 15px #444444;
+    --primary-color: #2e4153;
+    --secondary-color: #e4e4e4;
+    --filled-color: unset;
+    --stroke: .6px #272727;
+    --custom-box-shadow_1: 3px 3px 3px 3px #2e4153, -3px -3px 3px 3px #2e4153;
+    --custom-box-shadow_2: 3px 3px 3px 3px #e4e4e4, -3px -3px 3px 3px #e4e4e4;
+    --main-first-letter: #8a2be2;
+    --main-first-line: #8a2be2;
+    --main-first-letter-font: 'Rubik Marker Hatch', 'sans-serif';
+    --initial-font-size: 1rem;
+}
+
+* {
+    transition: all 1s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: var(--background-color); */
+}
+
+.portfolio {
+    --main-first-letter: #f0b616;
+    --main-first-line: #c29825;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Iceberg', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+p::first-letter {
+    font-size: 1.3em;
+    color: var(--main-first-letter);
+    font-family: var(--main-first-letter-font);
+    text-shadow: var(--text-shadow);
+    -webkit-text-stroke: var(--stroke);
+    -webkit-text-fill-color: var(--filled-color);
+}
+
+p {
+    background: var(--background-color);
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 2.2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: .1%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 4em;
+    box-shadow: var(--custom-box-shadow_1);
+}
+
+button::before {
+    content: var(--background-img-sun);
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    box-shadow: var(--custom-box-shadow_2);
+}
+
+h1,
+h2 {
+    color: var(--text-color);
+    text-align: center;
+    text-shadow: var(--text-shadow);
+    -webkit-text-stroke: var(--stroke);
+    -webkit-text-fill-color: var(--filled-color);
+    margin: 0 auto;
+    font-size: 3.7rem;
+    font-family: Roboto;
+    transition: all 2s;
+}
+
+.portfolio div {
+    background-color: var(--div-background-color);
+    text-align: center;
+}
+
+.sticky_header {
+    padding: 1%;
+    display: flex;
+    gap: 5%;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    line-height: 60px;
+    z-index: 1;
+
+}
+
+a {
+    font-size: 3.5rem;
+}
+
+.github {
+    font-size: 1.5rem;
+}
+
+a,
+.github {
+    color: var(--text-color);
+    text-shadow: var(--text-shadow);
+    -webkit-text-stroke: var(--stroke);
+    -webkit-text-fill-color: var(--filled-color);
+}
+
+
+.method {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.applogo {
+    width: 10%;
+    height: 10%;
+    transition: all 1.5s;
+}
+
+.applogo:hover {
+    transition: all 2s;
+    -webkit-transform: scale(1.5) rotate(1440deg);
+    -ms-transform: scale(1.5) rotate(1440deg);
+    transform: scale(1.5) rotate(1440deg);
+}
+
+.ava {
+    width: 10vw;
+    height: auto;
+}
+
+.ava:hover {
+    width: 20vw;
+    height: auto;
+}
+
+@media (max-width: 340px) {
+
+    .portfolio {
+        font-size: 0.9em;
+        line-height: 1.1;
+        padding: 10px;
+    }
+
+    button {
+        width: 100px;
+        height: 60px;
+        padding: .05%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
