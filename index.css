@@ -202,8 +202,36 @@ a,
 
 @media (max-width: 375px) {
     .sticky_header {
-        align-items: center;
-        flex-direction: row;
+        align-items: start;
+        flex-direction: column-reverse;
+    }
+
+    .portfolio {
+        font-size: 0.9em;
+        line-height: 1.1;
+        padding: 10px;
+    }
+
+    button {
+        width: 100px;
+        height: 60px;
+        padding: .05%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 1.2em;
+        line-height: normal;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    p {
+        font-size: 0.9em;
     }
 
     a {
@@ -213,8 +241,39 @@ a,
 
 @media (max-width: 768px) {
     .sticky_header {
-        /* align-items: center; */
         flex-direction: row;
+    }
+
+    .portfolio {
+        font-size: 0.9em;
+        line-height: 1.1;
+        padding: 10px;
+    }
+
+    button {
+        width: 100px;
+        height: 60px;
+        padding: .05%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 1.2em;
+        line-height: normal;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    a {
+        font-size: 1.5rem;
     }
 }
 
