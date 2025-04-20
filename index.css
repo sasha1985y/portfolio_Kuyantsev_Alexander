@@ -23,7 +23,6 @@
 body {
     margin: 0;
     padding: 0;
-    /* background-color: var(--background-color); */
 }
 
 .portfolio {
@@ -134,8 +133,8 @@ a,
 
 
 .method {
-    margin-bottom: 20px;
-    padding: 20px;
+    margin-bottom: 1%;
+    padding: 1%;
 }
 
 .applogo {
@@ -161,7 +160,12 @@ a,
     height: auto;
 }
 
-@media (max-width: 340px) {
+@media (max-width: 320px) {
+
+    .sticky_header {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
 
     .portfolio {
         font-size: 0.9em;
@@ -188,6 +192,29 @@ a,
 
     p {
         font-size: 0.9em;
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media (max-width: 375px) {
+    .sticky_header {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sticky_header {
+        /* align-items: center; */
+        flex-direction: row;
     }
 }
 
