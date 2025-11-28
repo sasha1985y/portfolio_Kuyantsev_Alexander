@@ -286,9 +286,19 @@ a,
     transform: rotate(-90deg);
 }
 
+.qa {
+    width: 55vw;
+    height: auto;
+}
+
+
 .mtusy:hover,
 .python-pro:hover {
     width: calc(50vw * 1.3);
+}
+
+.qa:hover {
+    width: calc(55vw * 1.5);
 }
 
 .javascript_1,
